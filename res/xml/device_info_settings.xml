@@ -18,7 +18,26 @@
         xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform"
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:title="@string/about_settings">
-
+        <PreferenceCategory android:layout="@layout/jactivelteam" android:key="blah" android:title="" />
+        
+        <!-- JactiveLTeam -->
+        <PreferenceScreen android:key="jactivelteam"
+                android:title="JactiveLTeam"
+                android:summary="Ivan Cristina (LuckyNuke1310) and Bruno Negovec (zagi988)">
+        </PreferenceScreen>
+        
+        <!-- Our Donators -->
+        <PreferenceScreen android:key="jactivelteam_donators"
+                android:title="Donators"
+                android:summary="Viatcheslav Ivanov (qubee)">
+        </PreferenceScreen>
+        
+        <PreferenceScreen android:key="system_update_settings"
+                android:title="@string/system_update_settings_list_item_title"
+                android:summary="@string/system_update_settings_list_item_summary">
+            <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+        </PreferenceScreen>
+        
         <!-- System update settings - launches activity -->
         <PreferenceScreen android:key="system_update_settings"
                 android:title="@string/system_update_settings_list_item_title"
