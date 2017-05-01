@@ -18,6 +18,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+  <plurals name="show_dev_countdown_cm">
+    <item quantity="one">Jesteś o <xliff:g id="step_count">%1$d</xliff:g> krok od włączenia ustawień programisty.</item>
+    <item quantity="few">Jesteś <xliff:g id="step_count">%1$d</xliff:g> kroki od włączenia ustawień programisty.</item>
+    <item quantity="other">Jesteś <xliff:g id="step_count">%1$d</xliff:g> kroków od włączenia ustawień programisty.</item>
+  </plurals>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
   <string name="show_dev_on_cm">Aktywowałeś opcje programistyczne!</string>
   <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
@@ -217,8 +222,10 @@
   <string name="volume_adjust_sounds_title">Dźwięk regulacji głośności</string>
   <!-- Vibrator intensity -->
   <string name="vibrator_intensity_title">Siła wibracji</string>
+  <string name="vibrator_intensity_dialog_warning">Wartości wyższe niż %1$d%% nie są zalecane</string>
   <string name="vibrator_intensity_dialog_reset">Reset</string>
   <!-- Sizes for pattern lockscreen -->
+  <string name="lock_settings_picker_pattern_size_message">Wybierz rozmiar wzoru</string>
   <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
   <string name="lockpattern_settings_enable_error_path_title">Pokazuj błędny wzór</string>
   <!-- Whether the dots will be drawn when using the lockscreen pattern -->
@@ -298,6 +305,20 @@
   <string name="increasing_ring_min_volume_title">Głośność początkowa</string>
   <string name="increasing_ring_ramp_up_time_title">Wydłużenie odstępu</string>
   <!-- Allow vibration in zen mode -->
+  <!-- Zen mode allowed event setting summary items -->
+  <!-- [CHAR LIMIT=50] Like zen_mode_reminders, but part of a list, so lower case if needed-->
+  <string name="zen_mode_summary_reminders">przypomnienia</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_events">zdarzenia</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">wszyscy rozmówcy</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_selected_callers">wybrani rozmówcy</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">wszystkie wiadomości</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_selected_messages">wybrane wiadomości</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_value_10_seconds">10 sekund</string>
   <string name="app_notification_sound_timeout_value_30_seconds">30 sekund</string>
@@ -333,7 +354,6 @@
   <string name="wake_when_plugged_or_unplugged_title">Wybudź przy podłączaniu</string>
   <string name="wake_when_plugged_or_unplugged_summary">Włącz ekran podczas podłączania i odłączania od źródła zasilania</string>
   <!-- Heads-up -->
-  <!-- Encryption password -->
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Inny</string>
   <!-- Wi-Fi tethering inactivity timeout -->
@@ -345,6 +365,7 @@
   <string name="hotstpot_inactivity_timeout_never_summary_text">Przenośny hotspot Wi\u2011Fi nie przejdzie w stan bezczynności</string>
   <string name="hotstpot_inactivity_timeout_summary_text">Przenośny hotspot Wi\u2011Fi przejdzie w stan bezczynności po <xliff:g id="timeout">%1$s</xliff:g></string>
   <!-- Per-app data restrictions -->
+  <string name="data_usage_app_restrict_data_category_title">Komórkowa transmisja danych</string>
   <string name="data_usage_app_restrict_wifi_category_title">Dostęp do danych przez Wi\u2011Fi</string>
   <!-- Title for switch to block app data usage [CHAR LIMIT=30] -->
   <!-- Summary for switch to block app data usage [CHAR LIMIT=NONE] -->
@@ -354,11 +375,28 @@
   <string name="volume_link_notification_title">Połącz głośność dzwonka &amp; powiadomień</string>
   <!-- Launch music player when headset is connected -->
   <string name="headset_connect_player_title">Uruchom odtwarzacz muzyki</string>
+  <string name="headset_connect_player_summary">Uruchom domyślny odtwarzacz muzyki po podłączeniu słuchawek</string>
   <!-- Update recovery -->
   <string name="update_recovery_title">Aktualizacja recovery</string>
+  <string name="update_recovery_summary">Aktualizacja recovery wraz z aktualizacją systemu</string>
   <string name="update_recovery_on_warning">UWAGA: Kiedy ta funkcja jest włączona, twoje recovery zostanie zastąpione przez to dołączone do aktualnie działającej wersji systemu.\n\nTwoje recovery będzie aktualizowane wraz z aktualizacjami systemu, pomagając w zapewnieniu kompatybilność z przyszłymi wersjami.\n\nChciałbyś włączyć tę funkcję?</string>
   <string name="update_recovery_off_warning">OSTRZEŻENIE: Kiedy ta funkcja jest wyłączona, zainstalowane recovery nie będzie się aktualizowało wraz z aktualizacjami systemu.\n\nPrzyszłe aktualizacje systemu mogą się nie zainstalować przy przestarzałych lub zewnętrznych wersjach recovery.\n\nCzy jesteś pewien, że chcesz wyłączyć tę funkcję?</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Dwukrotnie dotknij, aby uśpić</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dotknij dwukrotnie pasek stanu, aby zablokować ekran</string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s </xliff:g> jest <xliff:g id="status" example="disabled">%2$s </xliff:g></string>
+  <string name="sim_disabled">wyłączona</string>
+  <string name="sim_missing">brakująca lub uszkodzona</string>
+  <string name="sim_enabler_need_disable_sim">Karta SIM zostanie wyłączona. Kontynuować?</string>
+  <string name="sim_enabler_will_disable_sim_title">Uwaga</string>
+  <string name="sim_enabler_need_switch_data_service">Ta karta SIM zostanie wyłączona i SIM <xliff:g id="slotid">%1$s </xliff:g> będzie używana do transmisji danych, kontynuować?</string>
+  <string name="sim_enabler_airplane_on">Nie można wykonać operacji, gdy włączony jest tryb samolotowy.</string>
+  <string name="sim_enabler_in_call">Nie można wykonać operacji w czasie rozmowy.</string>
+  <string name="sim_enabler_both_inactive">Nie można wyłączyć wszystkich kart SIM</string>
+  <string name="sim_enabler_enabling">Aktywowanie\u2026</string>
+  <string name="sim_enabler_disabling">Dezaktywowanie\u2026</string>
+  <string name="sub_activate_success">SIM aktywowana.</string>
+  <string name="sub_activate_failed">Aktywacja nie powiodła się.</string>
+  <string name="sub_deactivate_success">SIM dezaktywowana.</string>
+  <string name="sub_deactivate_failed">Dezaktywacja nie powiodła się.</string>
 </resources>

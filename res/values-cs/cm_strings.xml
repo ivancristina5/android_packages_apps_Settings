@@ -41,7 +41,7 @@
   <string name="root_appops_title">Spravovat přístupy root</string>
   <string name="root_appops_summary">Zobrazit a zpravovat pravidla přístupů root</string>
   <!-- About phone screen, LineageOS version -->
-  <string name="mod_version">LineageOS verze</string>
+  <string name="mod_version">Verze systému LineageOS</string>
   <string name="mod_version_default">Neznámá</string>
   <!-- About phone screen, Device model -->
   <string name="device_model">Model</string>
@@ -315,6 +315,21 @@
   <string name="zen_mode_vibration_never">Nevibrovat</string>
   <string name="zen_mode_vibration_calls_only">Vibrovat pouze při volání</string>
   <string name="zen_mode_vibration_calls_and_notifications">Vibrovat při volání a oznámení</string>
+  <!-- Zen mode allowed event setting summary items -->
+  <!-- [CHAR LIMIT=50] Like zen_mode_reminders, but part of a list, so lower case if needed-->
+  <string name="zen_mode_summary_reminders">připomenutí</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_events, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_events">události</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_all_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_callers">všichni volající</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_selected_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_selected_callers">vybrané kontakty</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_repeat_callers, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_repeat_callers">volající, kteří volají opakovaně</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_all_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_all_messages">všechny zprávy</string>
+  <!-- [CHAR LIMIT=50] Like zen_mode_selected_messages, but part of a list, so lower case if needed -->
+  <string name="zen_mode_summary_selected_messages">vybrané zprávy</string>
   <!-- Notification sound timeout -->
   <string name="app_notification_sound_timeout_title">Minimální doba mezi zvuky oznámení</string>
   <string name="app_notification_sound_timeout_summary_template">Povolit zvuky nebo vibrace ne více než jednou každých <xliff:g id="duration">%1$s</xliff:g></string>
@@ -356,12 +371,6 @@
   <!-- Heads-up -->
   <string name="heads_up_notifications_enabled_title">Plovoucí upozornění</string>
   <string name="heads_up_notifications_enabled_summary">Zobrazit prioritní oznámení v malém plovoucím okně</string>
-  <!-- Encryption password -->
-  <string name="crypt_keeper_change_password_title">Změnit šifrovací heslo</string>
-  <string name="crypt_keeper_change_password_summary">Změnit heslo použité pro šifrování celého zařízení</string>
-  <string name="crypt_keeper_choose_your_password_header">Nastavit šifrovací heslo</string>
-  <string name="crypt_keeper_replace_password_title">Nahradit šifrovací heslo</string>
-  <string name="crypt_keeper_replace_password_summary">Odstranit samostatné šifrovací heslo</string>
   <!-- Tethering & portable hotspot other category -->
   <string name="tethering_other_category_text">Další</string>
   <!-- Wi-Fi tethering inactivity timeout -->
@@ -396,4 +405,20 @@
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">Dvojím klepnutím uspat</string>
   <string name="status_bar_double_tap_to_sleep_summary">Dvojitým poklepáním na stavovou lištu vypnout obrazovku</string>
+  <string name="sim_enabler_summary"><xliff:g id="displayName">%1$s</xliff:g> je <xliff:g id="status" example="disabled">%2$s</xliff:g></string>
+  <string name="sim_enabled">povoleno</string>
+  <string name="sim_disabled">zakázána</string>
+  <string name="sim_missing">chybějící nebo vadná</string>
+  <string name="sim_enabler_need_disable_sim">SIM karta bude deaktivována. Přejete si pokračovat?</string>
+  <string name="sim_enabler_will_disable_sim_title">Varování</string>
+  <string name="sim_enabler_need_switch_data_service">Tato SIM karta bude zakázána a SIM <xliff:g id="slotid">%1$s</xliff:g> bude použita pro datové služby. Jste si jisti, že chcete pokračovat?</string>
+  <string name="sim_enabler_airplane_on">Nelze provést akci, když je aktivován režim V letadle.</string>
+  <string name="sim_enabler_in_call">Při hovoru tuto akci nelze provést.</string>
+  <string name="sim_enabler_both_inactive">Nelze zakázat všechny SIM karty</string>
+  <string name="sim_enabler_enabling">Aktivování\u2026</string>
+  <string name="sim_enabler_disabling">Deaktivování\u2026</string>
+  <string name="sub_activate_success">SIM karta aktivována.</string>
+  <string name="sub_activate_failed">Aktivace selhala.</string>
+  <string name="sub_deactivate_success">SIM karta deaktivována.</string>
+  <string name="sub_deactivate_failed">Deaktivace selhala.</string>
 </resources>
