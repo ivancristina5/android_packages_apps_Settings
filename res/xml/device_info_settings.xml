@@ -18,18 +18,18 @@
         xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform"
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:title="@string/about_settings">
-        <PreferenceCategory android:layout="@layout/jactivelteam" android:key="blah" android:title="" />
+        <PreferenceCategory android:layout="@layout/jactivelteam" android:key="logo" android:title="" />
         
         <!-- JactiveLTeam -->
         <PreferenceScreen android:key="jactivelteam"
                 android:title="JactiveLTeam"
-                android:summary="Ivan Cristina (LuckyNuke1310) and Bruno Negovec (zagi988)">
+                android:summary="Ivan Cristina (IvanCristina) and Bruno Negovec (zagi988)">
         </PreferenceScreen>
         
         <!-- Our Donators -->
         <PreferenceScreen android:key="jactivelteam_donators"
                 android:title="Donators"
-                android:summary="Viatcheslav Ivanov (qubee)">
+                android:summary="Viatcheslav Ivanov (qubee)\nMartin Müller\nJoachim Wanke">
         </PreferenceScreen>
         
         <PreferenceScreen android:key="system_update_settings"
@@ -138,15 +138,11 @@
                 android:summary="@string/mod_version_default" />
 
         <!-- CyanogenMod API Version -->
-        <com.android.settings.DividerPreference
-                android:key="mod_api_level"
+        <Preference android:key="mod_api_level"
                 android:enabled="false"
-                android:selectable="false"
                 android:shouldDisableView="false"
                 android:title="@string/mod_api_level"
-                android:summary="@string/mod_api_level_default"
-                settings:allowDividerAbove="true"
-                settings:allowDividerBelow="true" />
+                android:summary="@string/mod_api_level_default" />
 
         <!-- Security patch level -->
         <PreferenceScreen android:key="security_patch"
@@ -197,15 +193,11 @@
                 settings:allowDividerBelow="true"/>
 
         <!-- Build date -->
-        <com.android.settings.DividerPreference
-                android:key="build_date"
+        <Preference android:key="build_date"
                 android:enabled="false"
-                android:selectable="false"
                 android:shouldDisableView="false"
                 android:title="@string/build_date"
-                android:summary="@string/build_date_default"
-                settings:allowDividerAbove="true"
-                settings:allowDividerBelow="true" />
+                android:summary="@string/build_date_default" />
 
         <!-- Detailed build version -->
         <Preference android:key="build_number"
